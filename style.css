@@ -1,0 +1,87 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0 10px; /* Prevent content from touching screen edges */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.heading {
+    font-size: 5vw; /* Responsive font size */
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Use a serif font for an elegant look */
+    color: rgb(238, 108, 129);
+}
+
+.flip-clock {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center the countdown */
+}
+
+.flip-clock-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.flip-clock-card {
+    background: #333;
+    color: white;
+    font-size: 8vw; /* Smaller font size to fit better */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+    max-width: 90px; /* Limit max-width for better scaling */
+    flex: 1; /* Allow cards to shrink and grow */
+    
+}
+
+.flip-clock-number {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.flip-clock-label {
+    font-size: 2.5vw; /* Adjusted for better fit */
+    color: #aaa;
+    text-transform: uppercase;
+    margin-top: 5px;
+    color: rgb(238, 108, 129);
+}
+
+@media (min-width: 768px) {
+    .flip-clock {
+        gap: 20px;
+        color: rgb(238, 108, 129);
+    }
+    .flip-clock-box {
+        gap: 10px;
+        color: rgb(238, 108, 129);
+    }
+    .flip-clock-card {
+        font-size: 48px;
+        padding: 10px;
+        max-width: 100px;
+        
+    }
+    .flip-clock-label {
+        font-size: 14px;
+        
+    }
+    .heading {
+        font-size: 3vw;
+        color: rgb(238, 108, 129);
+    }
+}
