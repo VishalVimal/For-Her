@@ -42,8 +42,8 @@ body {
     padding: 10px;
     border-radius: 8px;
     text-align: center;
-    min-width: 80px;
-    max-width: 90px; /* Limit max-width for better scaling */
+    min-width: 120px;
+    max-width: 190px; /* Limit max-width for better scaling */
     flex: 1; /* Allow cards to shrink and grow */
     
 }
